@@ -1,0 +1,20 @@
+schema: '2.0'
+stages:
+  train-and-evaluate:
+    cmd: python train.py
+    deps:
+    - path: data/test_features.csv
+      md5: b6a0c5eaa01aa2d1f85c3ebdd369f70b
+      size: 127501
+    - path: data/test_labels.csv
+      md5: 04b0f79abf6c578f428ca472e5349ad9
+      size: 6250
+    - path: data/train_features.csv
+      md5: f3fe05670c8d1380ba19ec00b0f03d38
+      size: 382456
+    - path: data/train_labels.csv
+      md5: 3ed0f0b46481d277081f3aa752206b99
+      size: 18750
+    - path: train.py
+      md5: 52a78b9e1394737108418b0e0c49149f
+      size: 765
